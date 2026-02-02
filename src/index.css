@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+/* Agar v4 config file access naa kar raha ho too, to yahan manually source bataty hain */
+@source "../index.html";
+@source "./**/*.{js,jsx,ts,tsx}";

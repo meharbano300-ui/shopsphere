@@ -1,0 +1,95 @@
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+          .custom-scrollbar::-webkit-scrollbar { width: 2px; }
+          .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+          .custom-scrollbar::-webkit-scrollbar-thumb { background: #4b5a50; }
+          
+          @keyframes reveal-up {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+          }
+          .animate-reveal-up { animation: reveal-up 1s cubic-bezier(0.19, 1, 0.22, 1) both; }
+          .delay-100 { animation-delay: 0.1s; }
+
+          /* Smooth Lag-Free Scroll */
+          .will-change-scroll { will-change: transform; backface-visibility: hidden; }
+      
+
+
+ /** navbar say upper waly marquee ki styling */
+           @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: marquee 9s linear infinite;
+          }
+          .group:hover .animate-marquee {
+            animation-play-state: paused;
+          }
+
+
+/** order summary waly section ki csss */
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+.animate-shine {
+  position: relative;
+  overflow: hidden;
+}
+.animate-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 3s infinite;
+}
+
+
+/** product_detail waly page par add to cart notification ki styling*/
+@keyframes shrink {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+.animate-shrink {
+  animation: shrink 3s linear forwards;
+}
+
+
+/** checkout kay detail waly page ki styling */
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+.font-syncopate { font-family: 'Syncopate', sans-serif; }
+/* Blinking Animation */
+@keyframes soft-blink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(0.98); shadow: 0 0 15px rgba(249, 115, 22, 0.4); }
+}
+.animate-blink { animation: soft-blink 2s infinite ease-in-out; }
+
+
+
+.slide-animation {
+  animation: slideEffect 3s infinite; /* 3 seconds total cycle */
+  display: inline-block;
+}
+@keyframes slideEffect {
+  0% { opacity: 0; transform: translateY(10px); }
+  5% { opacity: 1; transform: translateY(0); }   /* Foran andar aaya */
+  90% { opacity: 1; transform: translateY(0); }  /* Yahan tak "Stay" karega */
+  100% { opacity: 0; transform: translateY(-10px); } /* Foran bahar */
+}
+
+
