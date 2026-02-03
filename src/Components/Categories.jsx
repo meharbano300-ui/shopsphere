@@ -692,7 +692,7 @@ const EcommerceCategoriesPage = () => {
   </div>
 </main>
     {/* Main Content with Entrance Animation */}
-     <main className="container mx-auto px-4 md:px-6 lg:px-8 animate-category-fadeIn">
+     <main className="container mx-auto px-6 md:px-10 lg:px-16 xl:px-20 animate-category-fadeIn">
       {/* --- SECTION 1: ULTRA-MODERN HEADER --- */}
    <div className="mb-20 text-center relative pt-10">
   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-64 bg-[radial-gradient(circle,rgba(255,107,0,0.08)_0%,rgba(0,31,63,0.05)_50%,transparent_100%)] blur-3xl -z-10"></div>
@@ -723,7 +723,7 @@ const EcommerceCategoriesPage = () => {
   </motion.div>
 </div>
 {/* --- SECTION 2: LUXURY STATS GRID --- */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-15 ">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-15 px-2 md:px-4">
   {[
     { label: "Total Categories", value: categories.length, icon: <Grid size={20} />, suffix: "+" },
     { label: "Total Products", value: categories.reduce((sum, cat) => sum + cat.products, 0).toLocaleString(), icon: <Package size={20} />, suffix: "" },
@@ -770,7 +770,7 @@ const EcommerceCategoriesPage = () => {
 
 
 {/* Search and Filter Section - Premium Dashboard Design */}
-<div className="relative mb-15 px-4 md:px-6">
+<div className="relative mb-15 px-6 md:px-10">
   {/* Theme Based Ambient Glows */}
   <div className="absolute top-0 left-10 w-48 h-48 bg-[#d98d39]/10 blur-[80px] -z-10"></div>
   <div className="absolute bottom-0 right-10 w-48 h-48 bg-[#1a1f26]/10 blur-[80px] -z-10"></div>
@@ -899,7 +899,7 @@ const EcommerceCategoriesPage = () => {
   </div>
 </div>
 {/* --- ADVANCED PREMIUM CATEGORIES GRID --- */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-sans bg-[#ffffff] py-12 gap-y-16 gap-x-4 px-4">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-sans bg-[#ffffff] py-12 gap-y-16 gap-x-4 px-6 md:px-10">
   {filteredCategories.map((category, index) => (
     <motion.div
       key={category.id}
@@ -1003,7 +1003,7 @@ const EcommerceCategoriesPage = () => {
   ))}
 </div>
 {/* --- detailed box section ... click on explor button--- */}
-<div id="details-section" className="scroll-mt-24 px-4">
+<div id="details-section" className="scroll-mt-24 px-6 md:px-10">
   <AnimatePresence>
     {selectedCategory && (
       <motion.div 
@@ -1173,7 +1173,7 @@ const EcommerceCategoriesPage = () => {
 
 
 {/* Enhanced Features Section with Hover Effects */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20 px-3 mt-5 font-sans">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20 px-6 md:px-10 mt-5 font-sans">
   {[
     { 
       icon: <TruckIcon size={32} />, 
