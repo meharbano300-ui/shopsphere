@@ -692,7 +692,7 @@ const EcommerceCategoriesPage = () => {
   </div>
 </main>
     {/* Main Content with Entrance Animation */}
-     <main className="container mx-auto   animate-category-fadeIn">
+     <main className="container mx-auto px-4 md:px-6 lg:px-8 animate-category-fadeIn">
       {/* --- SECTION 1: ULTRA-MODERN HEADER --- */}
    <div className="mb-20 text-center relative pt-10">
   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-64 bg-[radial-gradient(circle,rgba(255,107,0,0.08)_0%,rgba(0,31,63,0.05)_50%,transparent_100%)] blur-3xl -z-10"></div>
@@ -770,7 +770,7 @@ const EcommerceCategoriesPage = () => {
 
 
 {/* Search and Filter Section - Premium Dashboard Design */}
-<div className="relative mb-15 px-2">
+<div className="relative mb-15 px-4 md:px-6">
   {/* Theme Based Ambient Glows */}
   <div className="absolute top-0 left-10 w-48 h-48 bg-[#d98d39]/10 blur-[80px] -z-10"></div>
   <div className="absolute bottom-0 right-10 w-48 h-48 bg-[#1a1f26]/10 blur-[80px] -z-10"></div>
