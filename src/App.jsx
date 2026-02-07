@@ -860,7 +860,7 @@ return (
            {/**social icons section end here */}
            {/**shopping girl right side */}
             <div className="col-span-12 lg:col-span-3 lg:-translate-y-44 lg:-ml- relative group">
-              <div className="relative col-span-12 lg:col-span-3 lg:-translate-x-13 lg:-translate-y-6">
+              <div className="relative col-span-12 lg:col-span-3 lg:-translate-x-43 lg:-translate-y-6">
                 <div className="rounded-[20px] overflow-hidden h-[360px] relative border-9 border-white shadow-2xl transition-transform duration-300">
                   <img src="/Images/img2.jfif" alt="Working girl" className="w-full h-full object-cover rounded-[15px] transition-transform duration-900 hover:scale-120 cursor-pointer" />
                 </div>
